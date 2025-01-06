@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-title {
+  font-family: 'Audiowide', cursive;
+  text-shadow: 
+    0 0 5px rgba(194, 164, 34, 0.5),
+    0 0 10px rgba(194, 164, 34, 0.3);
+  letter-spacing: 0.05em;
+  background: linear-gradient(to bottom, #C2A422, #5e4e07);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .hero-title {
+    letter-spacing: 0.1em;
+    text-shadow: 
+      0 0 10px rgba(194, 164, 34, 0.5),
+      0 0 20px rgba(194, 164, 34, 0.3),
+      0 0 30px rgba(94, 78, 7, 0.2);
+  }
+}
+
+.get-started-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.get-started-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(194, 164, 34, 0.2),
+    rgba(194, 164, 34, 0.4),
+    rgba(194, 164, 34, 0.2),
+    transparent
+  );
+  transition: all 0.5s ease;
+}
+
+.get-started-btn:hover::before {
+  left: 100%;
+}
+
+.get-started-btn:hover {
+  box-shadow: 
+    0 0 10px rgba(194, 164, 34, 0.5),
+    0 0 20px rgba(194, 164, 34, 0.3),
+    0 0 30px rgba(94, 78, 7, 0.2);
+  transform: translateY(-2px);
+}
