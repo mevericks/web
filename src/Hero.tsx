@@ -107,18 +107,19 @@ function HeroSpinningMetalicCubeDark() {
                 >
                   Mevericks is a team dedicated to helping validators and stakers maximize their staking APY through effective MEV strategies.
                 </motion.p>
-                <motion.button
+                <motion.a
+                  href="https://www.mevericks.io"
                   initial="hidden"
                   animate="visible"
                   variants={containerVariants}
                   transition={{ delay: 0.4, type: "spring", stiffness: 100 }}
-                  className="get-started-btn mx-auto mt-8 px-8 py-3 text-sm font-medium tracking-wider border-2 border-[#C2A422] bg-black hover:bg-black text-[#C2A422] rounded-lg flex items-center gap-2"
+                  className="get-started-btn mx-auto mt-8 px-8 py-3 text-sm font-medium tracking-wider border-2 border-[#C2A422] bg-black hover:bg-black text-[#C2A422] rounded-lg flex items-center gap-2 no-underline inline-flex cursor-pointer hover:text-[#C2A422]"
                 >
                   Get Started
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M13 9h8L11 24v-9H4l9-15v9zm-2 2V7.22L7.532 13H13v4.394L17.263 11H11V9h2z"/>
                   </svg>
-                </motion.button>
+                </motion.a>
             </div>
           </div>
         </div>
